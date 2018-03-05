@@ -1,0 +1,25 @@
+@media print{
+	header{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px){
+	header{
+		background-color: black;
+	}
+}
+
+@media screen and (max-width: 450px){
+	nav ul.menu li{
+		display: block;
+		width: 100%;
+	}
+	aside{
+		display: none;
+	}
+
+	section{
+		width: 100%;
+	}
+}
