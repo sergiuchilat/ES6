@@ -1,0 +1,13 @@
+De pregatit pentru lucrare:
+1. Variabile si constante
+2. Clase si obiecte
+2.1 Constructori
+2.2 Getteri si setteri
+2.3 Mostenire
+3. Formatul JSON
+3.1 Transformarea obiectului in JSON
+3.2 Transformarea JSON in obiect
+4. AJAX
+4.1 Obiectul XMLHttpRequest
+4.2. Metoda fetch
+5. Promise
