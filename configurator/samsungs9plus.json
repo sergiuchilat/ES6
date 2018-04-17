@@ -1,0 +1,9 @@
+{
+  "base_price": 800,
+  "colors": [
+    {"white": 0},
+    {"blue": 50},
+    {"pink": 75},
+    {"black": 100}
+  ]
+}
