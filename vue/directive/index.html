@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="app">
+        <div>
+            <div v-for="(task, index) in tasks" class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Задача № {{ index + 1 }}</h6>
+                    <h5 class="card-title">{{ task.title }}</h5>
+                    <p class="card-text">{{ task.description }}</p>
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="taskTitle">Задача</label>
+                <input type="email" class="form-control" id="taskTitle" v-model="taskTitle" placeholder="Задача">
+            </div>
+            <div class="form-group">
+                <label for="taskDescription">Описание</label>
+                <input type="text" class="form-control" id="taskDescription" v-model="taskDescription" placeholder="Описание задачи">
+            </div>
+
+            <button type="submit" class="btn btn-primary" v-on:click.prevent="addTask">Добавить</button>
+        </form>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+<pre>
+    https://www.youtube.com/watch?v=Q090HwqqsRI
+</pre>
+</body>
+</html>
